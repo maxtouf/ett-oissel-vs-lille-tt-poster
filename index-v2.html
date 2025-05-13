@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
     <link rel="stylesheet" href="styles-v2.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="poster">
@@ -46,10 +46,16 @@
         
         <div class="content">
             <div class="header">
-                <div class="logo">Tennis de Table</div>
+                <div class="logo">
+                    <i class="fas fa-table-tennis"></i> Tennis de Table
+                </div>
                 <div class="date-time">
-                    <div class="date-display">17 MAI</div>
-                    <div class="time-display">16:00</div>
+                    <div class="date-display">
+                        <i class="far fa-calendar-alt"></i> 17 MAI
+                    </div>
+                    <div class="time-display">
+                        <i class="far fa-clock"></i> 16:00
+                    </div>
                 </div>
             </div>
             
@@ -57,7 +63,11 @@
                 <div class="teams-container">
                     <div class="team team-left">
                         <div class="team-logo">
-                            <img src="https://via.placeholder.com/120?text=ETT" alt="ETT Oissel Logo">
+                            <!-- Logo d'Oissel stylisé -->
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1a73e8" />
+                                <text x="50" y="65" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">ETT</text>
+                            </svg>
                         </div>
                         <div class="team-name">ETT OISSEL</div>
                     </div>
@@ -66,43 +76,47 @@
                     
                     <div class="team team-right">
                         <div class="team-logo">
-                            <img src="https://via.placeholder.com/120?text=LILLE" alt="LILLE TT Logo">
+                            <!-- Logo de Lille stylisé -->
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#e63946" />
+                                <text x="50" y="65" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="white">LILLE</text>
+                            </svg>
                         </div>
                         <div class="team-name">LILLE TT</div>
                     </div>
                 </div>
                 
                 <div class="highlight-box">
-                    TOUT SE JOUE MAINTENANT !
+                    <i class="fas fa-fire"></i> TOUT SE JOUE MAINTENANT ! <i class="fas fa-fire"></i>
                 </div>
                 
                 <div class="event-details">
-                    <h2>Informations</h2>
+                    <h2><i class="fas fa-info-circle"></i> Informations</h2>
                     <div class="detail-item">
-                        <div class="detail-icon">📅</div>
+                        <div class="detail-icon"><i class="far fa-calendar-alt"></i></div>
                         <div>Samedi 17 mai</div>
                     </div>
                     <div class="detail-item">
-                        <div class="detail-icon">🕔</div>
+                        <div class="detail-icon"><i class="far fa-clock"></i></div>
                         <div>16h00</div>
                     </div>
                     <div class="detail-item">
-                        <div class="detail-icon">📍</div>
+                        <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>Salle Claude Billard – Oissel</div>
                     </div>
                     <div class="detail-item">
-                        <div class="detail-icon">🗣️</div>
+                        <div class="detail-icon"><i class="fas fa-bullhorn"></i></div>
                         <div>Soutenez notre équipe pour rester en N3 !</div>
                     </div>
                     <div class="detail-item">
-                        <div class="detail-icon">🔥</div>
+                        <div class="detail-icon"><i class="fas fa-fire"></i></div>
                         <div>Ambiance, tension, spectacle...</div>
                     </div>
                 </div>
                 
                 <div class="call-to-action">
                     <div class="free-entry-badge">
-                        ENTRÉE GRATUITE
+                        <i class="fas fa-ticket-alt"></i> ENTRÉE GRATUITE
                         <span class="subtitle">Venez nombreux en famille ou entre amis !</span>
                     </div>
                 </div>
@@ -110,21 +124,7 @@
         </div>
     </div>
 
-    <script>
-        // Add some random motion to the ping pong balls
-        document.addEventListener('DOMContentLoaded', function() {
-            // Function to randomly change the animation delay
-            function randomizeAnimation(element) {
-                const delay = Math.random() * -10;
-                element.style.animationDelay = delay + 's';
-            }
-            
-            // Get all ping pong balls
-            const balls = document.querySelectorAll('.ping-pong-ball');
-            
-            // Randomize the animation for each ball
-            balls.forEach(randomizeAnimation);
-        });
-    </script>
+    <!-- Script for advanced animations -->
+    <script src="script.js"></script>
 </body>
 </html>
